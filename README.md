@@ -1,5 +1,5 @@
 # Popup-Weblio
-Search English words without leaving the current page for Japanese.現在のページから離れずにポップアップでWeblio(https://ejje.weblio.jp/)で英単語検索できるChrome拡張機能。
+Search English words without leaving the current page for Japanese.現在のページから離れずにポップアップでWeblio(https://ejje.weblio.jp/) で英単語検索できるChrome拡張機能。
 
 Chromeのジグゾーパズルのアイコンからこの拡張機能をクリックするか、`Alt+P`（Macの場合`Option+P`）でポップアップhtmlが呼び起こされます。
 <img width="419" alt="スクリーンショット 2021-10-23 12 40 22" src="https://user-images.githubusercontent.com/43945931/138541139-8e7203f5-cbe1-4fa8-bd4b-61c83c78758d.png">
