@@ -2,6 +2,7 @@
 Search English word without leaving the page
 
 現在のページから離れずにポップアップで英単語検索する
+Chromeの拡張機能（ジグゾーパズルのアイコン）からこの拡張機能をクリックするか、`Alt+P`（Macの場合`Option+P`）でポップアップhtmlが呼び起こされます。
 
 <img width="419" alt="スクリーンショット 2021-10-23 12 40 22" src="https://user-images.githubusercontent.com/43945931/138541139-8e7203f5-cbe1-4fa8-bd4b-61c83c78758d.png">
 
