@@ -5,6 +5,32 @@
 
 // LOG CLASS
 
+
+chrome.browserAction.onClicked.addListener(doActionButton);
+
+function doActionButton(tab){
+    console.log('Action Button clicked. Tab:',tab);
+}
+
+chrome.commands.onCommand.addListener(function(command) {
+    //Polyfill the Browser Action button
+    if(command === '_execute_browser_action') {
+        chrome.tabs.query({active:true,currentWindow:true},function(tabs){
+            //Get the popup for the current tab
+            chrome.browserAction.getPopup({tabId:tabs[0].id},function(popupFile){
+                if(popupFile){
+                    openPopup(tabs[0],popupFile);
+                } else {
+                    //There is no popup defined, so we do what is supposed to be done for
+                    //  the browserAction button.
+                    doActionButton(tabs[0]);
+                }
+            });
+        });
+        return;
+    } //else
+});
+
 class NAMNH_LOG {
 
     constructor(tag) {
@@ -63,7 +89,7 @@ var last_popup_tabId = false;
 
 var urlCambridge_English = "https://ejje.weblio.jp/content/"//"https://dictionary.cambridge.org/search/english/direct/?q=";
 var urlCambridge_American_English = "https://ejje.weblio.jp/content/" //"https://dictionary.cambridge.org/search/english/direct/?q=";
-var WORD_LIST_MAX = 15;
+var WORD_LIST_MAX = 5;
 
 // function to create new popup
 function createPopup(popup_info){

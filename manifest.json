@@ -24,5 +24,23 @@
 	"permissions": [
 		"storage",
 		"contextMenus"
-	]
+	],
+	"commands": {
+		"_execute_browser_action": {
+		  "suggested_key": {
+			"default": "Alt+P",
+			"windows": "Alt+P",
+			"mac": "Alt+P"
+		  },
+		  "description": "Popup weblio"
+		},
+		"_execute_page_action": {
+			"suggested_key": {
+			  "default": "Alt+O",
+			  "windows": "Alt+O",
+			  "mac": "MacCtrl+Shift+O"
+			},
+			"description": "Popup weblio"
+		}
+	}
 }
