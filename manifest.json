@@ -1,46 +1,27 @@
 {
-"update_url": "https://clients2.google.com/service/update2/crx",
+    "name": "My memo",
+    "description": "Extension for memo to delete halfspace and improve sentence",
+    "version": "1.0",
+    "icons": {
+      "48": "img/memo.png"
+    },
+    "manifest_version": 2,
+    "browser_action":{
+        "default_icon": {"48":"img/memo.png"},
+        "default_title": "メモ！",
+        "default_popup": "index.html"
+    },
+    "permissions": ["tabs"],
+    
 
-	"manifest_version": 2,
-	"name": "Popup Weblio",
-	"version": "1",
-	"description": "Looks up the selected text on Weblio Dictionary",
-	"icons": {
-		"128": "weblio.png",
-		"48": "weblio.png",
-		"16": "weblio.png"
-	},
-
-	"browser_action": {
-		"default_icon": "weblio.png",
-		"default_popup": "popup.html"
-	},
-
-	"background": {
-		"scripts": ["eventPage.js"],
-		"persistent": false
-	},
-
-	"permissions": [
-		"storage",
-		"contextMenus"
-	],
-	"commands": {
-		"_execute_browser_action": {
-		  "suggested_key": {
-			"default": "Alt+P",
-			"windows": "Alt+P",
-			"mac": "Alt+P"
-		  },
-		  "description": "Popup weblio"
-		},
-		"_execute_page_action": {
-			"suggested_key": {
-			  "default": "Alt+O",
-			  "windows": "Alt+O",
-			  "mac": "MacCtrl+Shift+O"
-			},
-			"description": "Popup weblio"
-		}
-	}
+    "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+        "default": "Alt+M",
+        "windows": "Alt+M",
+        "mac": "Alt+M"
+        },
+        "description": "メモ"
+      }
+    }
 }
