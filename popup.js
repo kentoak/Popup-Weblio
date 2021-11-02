@@ -33,7 +33,7 @@ class NAMNH_CONSOLE {
   
   let namnhlog = new NAMNH_CONSOLE("POPUP");
 
-  var WORD_LIST_MAX = 5;//15;
+  var WORD_LIST_MAX = 7;//15;
 
   function showPopup(word){
     var cambridgeUrl = "https://ejje.weblio.jp/content/" + word;
@@ -151,6 +151,10 @@ function storeWord(){
             var row = table.insertRow(-1);
             var cell1 = row.insertCell(0);
             var cell2 = row.insertCell(1);
+            
+            if (word.length > 20){
+                word = word.slice(0,19)
+            }
 
             cell1.innerHTML = "<a href='#' id='clickOnLink_"+ word +"'>"+ word +"</a>";
             cell2.innerHTML = "<a href='#' id='deleteBtn_"+ word +"'><img src='./image/mdl-cross.svg' height='15px'></a>";
