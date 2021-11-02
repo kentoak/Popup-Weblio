@@ -5,17 +5,20 @@ body, html{
     width: 320x;
 }
 
-h2 {
-    color: rgba(28,110,164,0.69);
+h3 {
+    color: blue;
+    font-family: "Comic Sans MS";
+    padding: 0 0 0 5px;;
 }
 
 .center_wrap {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 1px 5px grey;
+    box-shadow: 0 1px 4px grey;
     /* padding: 0 0 0 5px; */
-    padding: 5px;
+    padding: 0px;
+    width: 300px;
 }
 
 /* Search Box 240---------------*/
@@ -49,6 +52,10 @@ h2 {
     background-color: #af8a40 !important;
 } 
 
+#btn_deepl_search:hover{
+    background-color: #af8a40 !important;
+} 
+
 /* 
 #cambridge_seachbox
 {
@@ -64,10 +71,10 @@ h2 {
 {
     width: 100%;
     text-indent: 5px;
-    /* margin-top: 10px; */
-    /* margin-bottom: 12px; */
-    /* border: 1px solid #cccccc; */
-    /* border-collapse: separate; */
+    margin-top: 0px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-collapse: separate;
 }
 
 tr:first-child 

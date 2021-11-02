@@ -6,13 +6,13 @@
 	"version": "1",
 	"description": "Looks up the selected text on Weblio Dictionary",
 	"icons": {
-		"128": "weblio.png",
-		"48": "weblio.png",
-		"16": "weblio.png"
+		"128": "1200px-Hk_P-plate.svg.png",
+		"48": "1200px-Hk_P-plate.svg.png",
+		"16": "1200px-Hk_P-plate.svg.png"
 	},
 
 	"browser_action": {
-		"default_icon": "weblio.png",
+		"default_icon": "1200px-Hk_P-plate.svg.png",
 		"default_popup": "popup.html"
 	},
 
